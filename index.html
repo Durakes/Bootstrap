@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <!-- Teoría
+        class: container -> centrado
+        class: container-fluid -> Pantalla completa, con pequeño padding a los lados
+        class: row -> crea una fila con 12 columnas
+        class: col -> 1 columna dentro de row
+            col-auto -> tamaño automatico, col-md-auto
+            col-#    < 576px
+            col-sm-#  ≥ 576px
+            col-md-#  ≥ 768px
+            col-lg-#  ≥ 992px
+            col-xl-#  ≥ 1200px
+        
+        #ALINEACIÓN HORIZONTAL    
+        align-items-center ---- row
+        align-items-start
+        align-items-end
+        align-self-center  ---- col
+        #ALINEACIÓN VERTICAL ---- row
+        justify-content-center
+        justify-content-start
+        justify-content-end
+        justify-content-between
+        justify-content-around
+        offset-# --- columnas a la izquierda en blanco
+        order-# --- orden para reordenar columnas, empieza en 0 por defecto
+        border
+        border-(right,top,left,bottom)-0 bordes simples
+        border-primary ----------- color predeterminado
+        border-"place"-0 quitar borde de un solo lugar
+        rounded-(top,bottom,start,end,circle) borders redondeados
+        float-(end, start) mover componente al inicio o al final
+        clearfix ---- En el padre de los float para ordenar
+        border-(primary,secondary,success,danger,warning,info,light,dark,white) color
+        text-(primary,secondary,success,danger,warning,info,light,dark,muted,white) color al texto
+        bg-(primary,secondary,success,danger,warning,info,light,dark,white) color fondo
+        d-(none,inline, inline-block, block, table, table-cell, table-row, flex, inline-flex) Mostrar el contenido de diferentes formas
+        embed-responsive embed-responsive-(21by9, 16by9, 4by3, 1by1)
+        position-(static, relative, absolute, fixed, sticky)
+        
+    -->
+    <!--<div class="pruebas"> ----- Ejemplo 1
+        <div class="container">
+            <h1>Hola Mundo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus autem ullam laboriosam. Asperiores maiores quia omnis fugit ipsam deserunt dolorum veritatis aperiam ratione suscipit tenetur culpa, ex delectus fugiat illum.</p>
+        </div>
+        <div class="container-fluid">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis temporibus a excepturi voluptatum quis fugit cum libero omnis nihil quae assumenda eaque aspernatur saepe autem voluptatibus porro consequatur, quod cupiditate?</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src ="https://i.ibb.co/rcPWCRG/Super-Giant-Games.jpg" alt ="perfil" class="perfil">
+                </div>
+                <div class="col-6">
+                    <p>
+                    Mis principales intereses son los videojuegos, la música, los libros y cualquier medio de entretenimiento digital. En el futuro quiero ser desarrollador de videojuegos y poder formar mi propia empresa de juegos indie, algunos de mis juegos favoritos son: Chrono Trigger, Hollow Knight y Bastion. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!--<div class="container"> ----- ejemplo 2
+        <header class="row">
+            <div class="col">
+                <h1>Nombre del sitio</h1>
+            </div>
+        </header>
+
+        <section class="row banner">
+            <div class="col">
+                <h2>Titulo banner</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+        <section class="row servicios">
+            <div class="servicio col-sm-6 col-md-4 col-lg-3">
+                <h3>Titulo servicio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, excepturi?.</p>
+            </div>  
+            <div class="servicio col-sm-6 col-md-4 col-lg-3">
+                <h3>Titulo servicio</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, qui!</p>
+            </div>
+            <div class="servicio col-sm-6 col-md-4 col-lg-3">
+                <h3>Titulo servicio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dicta!</p>
+            </div>
+            <div class="servicio col-sm-6 col-md-12 col-lg-3">
+                <h3>Titulo servicio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quidem.</p>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-md col-lg-9 sobre-nosotros">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla vel aliquam harum quam temporibus nam vitae obcaecati, esse sed ullam. Nesciunt sunt esse dolorum ipsam, ipsum corrupti qui quibusdam neque maiores voluptas sint aliquid ducimus iure quis sapiente necessitatibus est quaerat. Repudiandae earum dolor quaerat officiis? Placeat, quasi eius voluptatem natus eos molestiae quod magni eveniet fugit reiciendis libero, assumenda accusamus. Quia voluptates eum quidem, maxime itaque illum ipsa aut error obcaecati, corporis laudantium. Repudiandae at earum quasi ea cupiditate veniam consectetur quis blanditiis ducimus. Illum numquam quia saepe excepturi ipsa nostrum, dicta rerum, quam vel impedit iusto autem omnis.</p>
+            </div>
+            <aside class="col-md col-lg-3">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <footer class="row">
+            <div class="col col-auto">
+                Todos los derechos reserados
+            </div>
+            <div class="col col-auto">
+                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+            </div>
+        </footer>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <p class="border border-primary rounded">border-primary ✔ <!--<span class="badge badge-primary">✔</span>--></p>
+                    <p class="border border-secondary rounded-end">border-secondary</p>
+                    <p class="border border-success rounded-top">border-success</p>
+                    <p class="border border-danger rounded-bottom">border-danger</p>
+                    <p class="border border-warning rounded-start">border-warning</p>
+                    <p class="border border-info">border-info</p>
+                    <p class="border border-light">border-light</p>
+                    <p class="border border-dark rounded-circle">border-dark</p>
+                    <p class="border border-white">border-white</p>
+                </div>
+                <div class="padre clearfix">
+                    <div class="hijo float-end">Izquierda</div>
+                    <div class="hijo float-start">Derecha</div>
+                </div>
+                <div>
+                    <p class="text-primary">.text-primary</p>
+                    <p class="text-secondary">.text-secondary</p>
+                    <p class="text-success">.text-success</p>
+                    <p class="text-danger">.text-danger</p>
+                    <p class="text-warning">.text-warning</p>
+                    <p class="text-info">.text-info</p>
+                    <p class="text-light">.text-light</p>
+                    <p class="text-dark">.text-dark</p>
+                    <p class="text-muted">.text-muted</p>
+                    <p class="text-white">.text-white</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
+</body>
+</html>

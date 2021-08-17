@@ -1,0 +1,66 @@
+
+.row
+{
+    margin-bottom: 20px;
+}
+body
+{
+    margin-top: 40px;
+}
+p
+{
+    margin-bottom: 20px;
+}
+.padre
+{
+    background: blue;
+    padding: 20px;
+}
+.hijo
+{
+    padding: 50px;
+    width: 200px;
+    background: black;
+    color: white;
+    margin: 20px;
+}
+/*.perfil
+{
+    max-width: 100%;
+}
+header
+{
+    background: #bd2130;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.banner
+{
+    background: #faebd7;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.servicios .servicio
+{
+    background: #deb887;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sobre-nosotros
+{
+    background: #fff8dc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+aside
+{
+    background: #f0f8ff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer
+{
+    background: #e9ecef;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}*/
